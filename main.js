@@ -15,8 +15,8 @@ if (window.jQuery) {
             $.each(byday, function (index, item) {
                 byday[index] = item.toUpperCase();
             });
-            startTime = tmp.split(" ")[1].match(/(\d+)(?::(\d\d))?\s*(p?)/);
-            endTime = $("#DERIVED_SSS_SCL_SSR_MTG_SCHED_LONG\\$" + i).text().split("\n")[0].split("-")[1].trim().match(/(\d+)(?::(\d\d))?\s*(p?)/);
+            startTime = tmp.split(" ")[1].match(/(\d+)(?::(\d\d))?\s*(P?)/);
+            endTime = $("#DERIVED_SSS_SCL_SSR_MTG_SCHED_LONG\\$" + i).text().split("\n")[0].split("-")[1].trim().match(/(\d+)(?::(\d\d))?\s*(P?)/);
             begin = new Date();
             begin.setMonth(startMonth);
             begin.setDate(startDay);

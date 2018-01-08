@@ -5,9 +5,9 @@ if (window.jQuery) {
         totalCourses = myCourses.length - 1;
 
         var data = [];
-        startMonth = 0;
-        startDay = 7;
-        endDate = 'April 15 2016';
+        startMonth = 0; // 0 is Jan, 4 is May, 8 is Sep
+        startDay = 8;
+        endDate = 'April 17 2018'; // One day after last day
 
         for (i = 0; i < totalCourses; i++) {
             tmp = $("#DERIVED_SSS_SCL_SSR_MTG_SCHED_LONG\\$" + i).text().split("\n")[0].split("-")[0].trim();
